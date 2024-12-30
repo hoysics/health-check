@@ -1,0 +1,10 @@
+server:
+  addr: 0.0.0.0:3000
+services:
+  - {name: rust-dev, api: https://www.rust-lang.org}
+smtp:
+  from: ${SMTP_FROM}
+  to: ${SMTP_TO}
+  username: ${SMTP_USERNAME}
+  password: ${SMTP_PASSWORD}
+  domain: ${SMTP_DOMAIN}
